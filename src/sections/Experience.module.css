@@ -1,0 +1,168 @@
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.tab {
+  padding: 0.55rem 1.4rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--muted);
+  transition: all 0.2s;
+}
+
+.tab:hover { border-color: var(--teal); color: var(--teal); }
+
+.active {
+  background: var(--teal) !important;
+  color: #07090F !important;
+  border-color: var(--teal) !important;
+  font-weight: 700;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.ecard {
+  padding: 1.8rem;
+  border-left: 3px solid var(--border2);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.paid { border-left-color: var(--teal); }
+.volunteering { border-left-color: var(--gold); }
+
+.ecard:hover { transform: translateX(4px); }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.roleBadge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background: rgba(0,212,180,0.08);
+  border: 1px solid rgba(0,212,180,0.2);
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--teal);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.4rem;
+}
+
+.volunteering .roleBadge {
+  background: rgba(232,160,32,0.08);
+  border-color: rgba(232,160,32,0.2);
+  color: var(--gold);
+}
+
+.role {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.org { font-weight: 600; color: var(--text); }
+.sep { color: var(--faint); }
+.period { }
+
+.bigIcon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin: 0;
+}
+
+.points li {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.65;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.points li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--teal);
+  font-size: 0.75rem;
+  top: 0.1rem;
+}
+
+.volunteering .points li::before { color: var(--gold); }
+
+.expLink {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--teal);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.expLink:hover { text-decoration: underline; }
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
+  }
+  .tab {
+    text-align: left;
+  }
+  .ecard {
+    padding: 1.4rem;
+  }
+  .header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .bigIcon {
+    font-size: 1.4rem;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .ecard {
+    padding: 1.1rem 1.1rem 1.1rem 1.3rem;
+  }
+  .meta {
+    flex-wrap: wrap;
+    gap: 0.2rem;
+  }
+  .sep {
+    display: none;
+  }
+  .period {
+    width: 100%;
+  }
+}

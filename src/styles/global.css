@@ -1,0 +1,263 @@
+/* ─── THEME VARIABLES ─── */
+:root,
+[data-theme="dark"] {
+  --bg: #07090F;
+  --bg2: #0C1018;
+  --bg3: #111827;
+  --card: #141B27;
+  --border: rgba(0, 210, 180, 0.10);
+  --border2: rgba(0, 210, 180, 0.22);
+  --teal: #00D4B4;
+  --teal2: #00B89C;
+  --gold: #E8A020;
+  --gold2: #C88A10;
+  --purple: #8B7CF8;
+  --text: #EBF2FF;
+  --muted: #7A90A8;
+  --faint: #2D3F52;
+  --nav-h: 68px;
+}
+
+[data-theme="light"] {
+  --bg: #F0EDE6;
+  --bg2: #E8E4DC;
+  --bg3: #DDD8CE;
+  --card: #FAF8F4;
+  --border: rgba(0, 120, 100, 0.13);
+  --border2: rgba(0, 120, 100, 0.28);
+  --teal: #007A6B;
+  --teal2: #005F54;
+  --gold: #A06800;
+  --gold2: #7A5000;
+  --purple: #5C52C5;
+  --text: #0E1924;
+  --muted: #4A6070;
+  --faint: #C0CDD8;
+  --nav-h: 68px;
+}
+
+/* ─── RESET ─── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  overflow-x: hidden;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Noise texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.022;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
+
+/* ─── TYPOGRAPHY ─── */
+h1, h2, h3, h4 {
+  font-family: 'Syne', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* ─── SHARED SECTION STYLES ─── */
+.section {
+  padding: 6rem 5vw;
+  position: relative;
+  z-index: 1;
+}
+
+.section--alt {
+  background: var(--bg2);
+}
+
+.section--alt2 {
+  background: var(--bg3);
+}
+
+.sec-chip {
+  display: inline-block;
+  color: var(--teal);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.sec-title {
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 0.6rem;
+}
+
+.sec-sub {
+  color: var(--muted);
+  font-size: 1rem;
+  max-width: 580px;
+  margin-bottom: 3rem;
+  line-height: 1.75;
+}
+
+.teal-bar {
+  width: 40px;
+  height: 3px;
+  background: var(--teal);
+  border-radius: 2px;
+  margin: 0.7rem 0 2rem;
+}
+
+/* ─── SHARED BUTTONS ─── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.85rem 2rem;
+  background: var(--teal);
+  color: #07090F;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn-primary:hover {
+  background: var(--teal2);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.85rem 2rem;
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.btn-secondary:hover {
+  border-color: var(--teal);
+  background: rgba(0, 212, 180, 0.05);
+}
+
+/* ─── CARDS ─── */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  border-color: var(--border2);
+  transform: translateY(-3px);
+}
+
+/* ─── STACK TAGS ─── */
+.stack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.stack-tag {
+  padding: 0.22rem 0.65rem;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+/* ─── REVEAL ANIMATIONS ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Children stagger animation */
+.reveal-child {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.reveal-child.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 3.5rem 4vw;
+  }
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  .sec-title {
+    font-size: clamp(1.55rem, 6vw, 1.9rem);
+  }
+  .sec-sub {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  .stack-tag {
+    font-size: 0.68rem;
+    padding: 0.18rem 0.5rem;
+  }
+}
