@@ -283,3 +283,4 @@ If it fails (network, CORS), the component silently falls back to a direct Mediu
 | 11 | Fashion | `#fashion` | Aafinoge |
 | 12 | Contact | `#contact` | Form + socials |
 # mercy-portfolio-v2
+# mercy-portfolio-v2
