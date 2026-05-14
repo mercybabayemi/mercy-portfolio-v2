@@ -1,19 +1,5 @@
 # Mercy Babayemi — Portfolio
 > React + Vite · CSS Modules · Dark/Light theme · Fully component-driven
-
----
-
-## Why React (not HTML)
-
-The previous HTML file was 600+ lines of repeated markup. Every card, badge, and
-section was copy-pasted. With this React setup:
-
-- **Edit data, not markup** — all your content lives in `src/data/portfolio.js`
-- **One component, everywhere** — `<SectionHeader />`, `<ProjectCard />` are reused across all sections
-- **Add a project in 5 seconds** — just push an object into the `PROJECTS.grid` array
-- **Theme state is managed cleanly** — `ThemeContext` in `App.jsx`, persisted to `localStorage`
-- **Deployable to Vercel in one command** — `vercel --prod`
-
 ---
 
 ## Project Structure
@@ -101,17 +87,7 @@ vercel
 vercel --prod
 ```
 
-For Vercel auto-deploy from GitHub:
-1. Push this folder to a GitHub repo
-2. Go to vercel.com → Import Project → select the repo
-3. Framework: **Vite** (auto-detected)
-4. Click Deploy — done.
-
----
-
-## Customising Content
-
-**Everything you need to edit is in one file: `src/data/portfolio.js`**
+**Everything I need to edit is in one file: `src/data/portfolio.js`**
 
 ### Update Aafinoge links (do this first)
 ```js
@@ -150,7 +126,7 @@ Change `status` from `'upcoming'` → `'done'`, and add the YouTube link.
 The **Live on Medium** tab in the Writing section fetches live from the RSS feed automatically.
 No action needed — it always shows your latest 3 articles.
 
-If you want to update the static writing style cards:
+If I want to update the static writing style cards:
 ```js
 // src/data/portfolio.js — TECH_WRITING.styles array
 {
