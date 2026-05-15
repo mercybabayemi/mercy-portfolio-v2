@@ -12,31 +12,16 @@ export default function Hero() {
       <div className={styles.glow} />
 
       <div className={`reveal ${styles.text}`} ref={textRef}>
-        <div className={styles.eyebrow}>
-          <span className={styles.dot} />
-          Open to opportunities
-        </div>
-
         <h1 className={styles.h1}>
-          AI Systems<br />
-          <span className={styles.accent}>Engineer</span>
-          <span className={styles.sub}>&amp; Technical Writer</span>
+          Mercy<br />
+          <span className={styles.accent}>Babayemi</span>
         </h1>
 
-        <p className={styles.desc}>{HERO.tagline}</p>
+        <p className={styles.location}>Lagos, Nigeria 🇳🇬</p>
 
         <div className={styles.btns}>
           <a href={HERO.cta.href} className="btn-primary">View Work →</a>
           <a href={HERO.cta2.href} className="btn-secondary">Let's Talk</a>
-        </div>
-
-        <div className={styles.stats}>
-          {HERO.stats.map(s => (
-            <div key={s.label}>
-              <div className={styles.statNum}>{s.num}</div>
-              <div className={styles.statLabel}>{s.label}</div>
-            </div>
-          ))}
         </div>
       </div>
 
@@ -44,9 +29,6 @@ export default function Hero() {
         <div className={styles.imgFrame}>
           <img src={photo} alt="Mercy Babayemi" />
           <div className={styles.imgOverlay} />
-        </div>
-        <div className={`${styles.badge} ${styles.badge1}`}>
-          <span className={styles.bdot} /> AI Systems Engineer
         </div>
         <div className={`${styles.badge} ${styles.badge2}`}>
           <span className={`${styles.bdot} ${styles.gold}`} /> Lagos, Nigeria 🇳🇬

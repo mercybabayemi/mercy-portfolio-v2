@@ -19,7 +19,7 @@ export default function Contact() {
       <SectionHeader chip="Contact" title="Let's Build Something" />
       <div className={`reveal ${styles.wrap}`} ref={ref}>
         <div>
-          <h3 className={styles.h3}>Open to AI engineering roles, freelance projects, research collaborations, and speaking opportunities.</h3>
+          <h3 className={styles.h3}>Open to freelance projects, research collaborations and opportunities.</h3>
           <p className={styles.p}>Whether you need an AI systems engineer, want to commission a website, need technical documentation, or want to discuss a research collaboration — I'm here.</p>
           <div className={styles.socials}>
             {SOCIALS.map(s => (

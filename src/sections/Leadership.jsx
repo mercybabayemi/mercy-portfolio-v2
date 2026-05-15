@@ -15,9 +15,9 @@ export default function Leadership() {
   return (
     <section id="leadership" className="section section--alt">
       <SectionHeader
-        chip="Leadership"
+        chip="Year in Service"
         title="Rotaract Club of Lagos Island"
-        sub={`President 2026–2027 · "${LEADERSHIP.theme}" · ${LEADERSHIP.targetProjects} projects`}
+        sub={`President 2026–2027 · "${LEADERSHIP.theme}"`}
       />
 
       <div className={`reveal ${styles.grid}`} ref={cardRef}>
@@ -49,9 +49,9 @@ export default function Leadership() {
             })}
           </div>
           <p className={styles.ytNote}>
-            📺 Follow the president year on{' '}
+            📺 Follow the Rotary year on YouTube with{' '}
             <a href="https://youtube.com/@naijatechsis" target="_blank" rel="noreferrer">
-              YouTube — Naija Tech Sis
+              Mercy Babayemi
             </a>
           </p>
         </div>

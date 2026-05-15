@@ -1,6 +1,10 @@
 import { useState, useEffect, useRef } from 'react'
+import ReactMarkdown from 'react-markdown'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import SectionHeader from '../components/SectionHeader'
 import { TECH_WRITING } from '../data/portfolio'
+import { POSTS } from '../data/posts'
 import styles from './TechWriting.module.css'
 
 function useMediumPosts() {
@@ -31,12 +35,41 @@ function WritingStyleBadge({ type }) {
   return <span className={`${styles.badge} ${styles[map[type] || 'teal']}`}>{type}</span>
 }
 
+function formatDate(dateStr) {
+  return new Date(dateStr).toLocaleDateString('en-GB', {
+    day: 'numeric', month: 'long', year: 'numeric',
+  })
+}
+
+const markdownComponents = {
+  code({ node, inline, className, children, ...props }) {
+    const match = /language-(\w+)/.exec(className || '')
+    return !inline && match ? (
+      <SyntaxHighlighter
+        style={oneDark}
+        language={match[1]}
+        PreTag="div"
+        customStyle={{ borderRadius: '8px', fontSize: '0.84rem', margin: '1.4rem 0' }}
+        {...props}
+      >
+        {String(children).replace(/\n$/, '')}
+      </SyntaxHighlighter>
+    ) : (
+      <code className={styles.inlineCode} {...props}>{children}</code>
+    )
+  },
+  img({ src, alt }) {
+    return <img src={src} alt={alt} className={styles.proseImg} />
+  },
+}
+
 export default function TechWriting() {
   const { posts, loading } = useMediumPosts()
-  const [tab, setTab] = useState('styles')
+  const [tab, setTab] = useState('blog')
+  const [selectedPost, setSelectedPost] = useState(null)
   const gridRef = useRef(null)
+  const readerRef = useRef(null)
 
-  // Re-observe on tab change
   useEffect(() => {
     const parent = gridRef.current
     if (!parent) return
@@ -56,20 +89,27 @@ export default function TechWriting() {
       observer.observe(child)
     })
     return () => observer.disconnect()
-  }, [tab, posts])
+  }, [tab, posts, selectedPost])
+
+  useEffect(() => {
+    if (selectedPost && readerRef.current) {
+      readerRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }, [selectedPost])
 
   const TABS = [
-    { id: 'styles', label: '📐 Writing Styles' },
-    { id: 'live',   label: '📡 Live on Medium' },
+    { id: 'blog',     label: '✍️ My Blog' },
+    { id: 'styles',   label: '📐 Writing Styles' },
+    { id: 'live',     label: '📡 Live on Medium' },
     { id: 'upcoming', label: '🗒️ Upcoming Formats' },
   ]
 
   return (
     <section id="writing" className="section section--alt">
       <SectionHeader
-        chip="Technical Writing"
+        chip="Writing"
         title="Words That Work"
-        sub="Six years on Medium. BA English from UNILAG. Writing that spans technical depth and human clarity — tutorials, research, reflections, roadmaps, and docs."
+        sub="Writing has always been mine. BA in English Language from UNILAG. From personal stories to API docs, tutorials, architecture docs, and everything in between — every word built with intention."
       />
 
       <div className={styles.tabs}>
@@ -77,12 +117,76 @@ export default function TechWriting() {
           <button
             key={t.id}
             className={`${styles.tab} ${tab === t.id ? styles.activeTab : ''}`}
-            onClick={() => setTab(t.id)}
+            onClick={() => { setTab(t.id); setSelectedPost(null) }}
           >
             {t.label}
           </button>
         ))}
       </div>
+
+      {/* MY BLOG */}
+      {tab === 'blog' && !selectedPost && (
+        <div className={styles.blogGrid} ref={gridRef}>
+          {POSTS.map(post => (
+            <div key={post.id} className={`card ${styles.blogCard} reveal-child`}>
+              {post.coverImage && (
+                <img src={post.coverImage} alt={post.title} className={styles.blogCover} />
+              )}
+              <div className={styles.blogBody}>
+                <div className={styles.blogMeta}>
+                  <span className={styles.blogDate}>{formatDate(post.date)}</span>
+                  <div className={styles.blogTags}>
+                    {post.tags.map(tag => (
+                      <span key={tag} className={`stack-tag ${styles.blogTag}`}>{tag}</span>
+                    ))}
+                  </div>
+                </div>
+                <h3 className={styles.blogTitle}>{post.title}</h3>
+                <p className={styles.blogExcerpt}>{post.excerpt}</p>
+                <button
+                  className={styles.readBtn}
+                  onClick={() => setSelectedPost(post)}
+                >
+                  Read →
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* POST READER */}
+      {tab === 'blog' && selectedPost && (
+        <div className={styles.reader} ref={readerRef}>
+          <button className={styles.backBtn} onClick={() => setSelectedPost(null)}>
+            ← Back to Blog
+          </button>
+          {selectedPost.coverImage && (
+            <img
+              src={selectedPost.coverImage}
+              alt={selectedPost.title}
+              className={styles.readerCover}
+            />
+          )}
+          <div className={styles.readerMeta}>
+            <span className={styles.blogDate}>{formatDate(selectedPost.date)}</span>
+            <div className={styles.blogTags}>
+              {selectedPost.tags.map(tag => (
+                <span key={tag} className={`stack-tag ${styles.blogTag}`}>{tag}</span>
+              ))}
+            </div>
+          </div>
+          <h1 className={styles.readerTitle}>{selectedPost.title}</h1>
+          <div className={styles.prose}>
+            <ReactMarkdown components={markdownComponents}>
+              {selectedPost.content}
+            </ReactMarkdown>
+          </div>
+          <button className={styles.backBtn} onClick={() => setSelectedPost(null)}>
+            ← Back to Blog
+          </button>
+        </div>
+      )}
 
       {/* WRITING STYLES */}
       {tab === 'styles' && (

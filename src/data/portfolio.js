@@ -19,9 +19,9 @@ export const HERO = {
 
 export const ABOUT = {
   bio: [
-    'From studying English at the University of Lagos to teaching secondary school students English and Literature in English to starting a data analysis internship and now engineering AI systems at Labs by Semicolon — my journey is one of intentional transition, deep curiosity, and relentless craft.',
+    'From studying English at the University of Lagos to teaching secondary school students English and Literature in English to starting a data analysis internship and now engineering AI systems at Labs by Semicolon. My journey is one of intentional transition, deep curiosity, and relentless craft.',
     'I specialize in AI/ML infrastructure, NLP research, and data science and engineering. I have built CPU-native/GPU content generation pipelines, African pedagogical evaluation frameworks, and full-stack AI products built for real African contexts.',
-    'My edge? I think across linguistics, pedagogy, and systems engineering simultaneously. My BA in English Language is not background noise — it is the reason the AI I build understands how people actually learn and communicate.',
+    'My edge? I think across linguistics, pedagogy, and systems engineering simultaneously. My BA in English Language is not background noise; it is the reason the AI I build understands how people actually learn and communicate.',
   ],
   tags: [
     'FastAPI', 'Python', 'NLP', 'Pydantic v2', 'Ollama',
@@ -29,11 +29,11 @@ export const ABOUT = {
     'Docker', 'Technical Writing', 'Mermaid', 'REST APIs',
   ],
   cards: [
-    { icon: '🏛️', title: 'Labs by Semicolon', body: 'AI Systems Engineering intern — EnumVerse content layer, VentureMarker pipeline (~56K records), AfriPed evaluation framework.' },
-    { icon: '🎓', title: 'University of Lagos', body: 'B.A. English Language — linguistic foundation that powers my NLP intuition and technical writing depth.' },
-    { icon: '🌱', title: 'ForNaijaKids', body: 'Founder. Bridging the digital divide in suburban Nigerian communities — putting computers in children\'s hands and teaching digital literacy so no child is left behind in the digital age.' },
+    { icon: '🏛️', title: 'Labs by Semicolon', body: 'AI Systems Engineering intern: EnumVerse content layer, VentureMarker pipeline (~56K records), AfriPed evaluation framework.' },
+    { icon: '🎓', title: 'University of Lagos', body: 'B.A. English Language, the linguistic foundation that powers my NLP intuition and technical writing depth.' },
+    { icon: '🌱', title: 'ForNaijaKids', body: 'Founder. Bridging the digital divide in suburban Nigerian communities, putting computers in children\'s hands and teaching digital literacy so no child is left behind in the digital age.' },
     { icon: '📡', title: 'Naija Tech Sis', body: 'Founder. AI education courses, web services, and digital products for Nigerian businesses and global learners.' },
-    { icon: '🌍', title: 'Rotaract Club of Lagos Island', body: 'President 2026–2027. "Create Lasting Impact" — Porto Novo June, President Elect Conference May.' },
+    { icon: '🌍', title: 'Rotaract Club of Lagos Island', body: 'President 2026–2027. "Create Lasting Impact." Porto Novo June, President Elect Conference May.' },
   ],
 }
 
@@ -51,18 +51,18 @@ export const SKILLS = [
 export const PROJECTS = {
   featured: {
     badge: '⭐ Featured Build',
-    title: 'EnumVerse — AI-Powered E-Learning Platform',
+    title: 'EnumVerse: AI-Powered E-Learning Platform',
     desc: 'An intelligent e-learning content generation system built at Labs by Semicolon. AI pipeline running open source models via Ollama, structured content and assessment generation with Pydantic v2 validation, and a coordinated multi-agent architecture. Runtime benchmark: 1–3 minutes on GPU, 7–15 minutes on CPU. Contributed as AI Systems Engineering intern.',
     stack: ['FastAPI', 'Pydantic v2', 'Ollama', 'Open Source Models', 'CPU & GPU', 'Agent Architecture', 'Python'],
-    links: [{ label: 'Private — Company IP', href: null }],
+    links: [{ label: 'Private (Company IP)', href: null }],
     color: 'gold',
   },
   grid: [
     {
       badge: 'Data Pipeline',
       title: 'VentureMarker',
-      desc: 'Company data pipeline scraping and structuring ~56,000 company records. Powers the VentureMarker product at Labs by Semicolon.',
-      stack: ['Python', 'Web Scraping', 'PostgreSQL', 'ETL'],
+      desc: 'Scraping and structuring ~56,000 company records and processing 30M+ records via the Dewey Data pipeline for the Labs by Semicolon data team. Currently powering the VentureMarker product.',
+      stack: ['Python', 'Web Scraping', 'PostgreSQL', 'ETL', '30M+ Records'],
       links: [{ label: 'Private', href: null }],
     },
     {
@@ -78,7 +78,7 @@ export const PROJECTS = {
     {
       badge: 'Content & Web',
       title: 'BRC Blog Integration',
-      desc: 'Led the Blog Integration Team for Black Rising Community\'s website — configured Contentful CMS for dynamic content management, built reusable React components for page types, and authored articles as Content Team Lead. Coordinated team contributions across the live blog feature.',
+      desc: 'Led the Blog Integration Team for Black Rising Community\'s website; configured Contentful CMS for dynamic content management, built reusable React components for page types, and authored articles as Content Team Lead. Coordinated team contributions across the live blog feature.',
       stack: ['React', 'TypeScript', 'Tailwind CSS', 'Contentful CMS', 'Vite', 'JavaScript'],
       links: [
         { label: 'GitHub →', href: 'https://github.com/0d-fako/black-rising' },
@@ -88,19 +88,12 @@ export const PROJECTS = {
     {
       badge: 'Capstone',
       title: 'Niger Local Links',
-      desc: 'Open-source system tackling local government digitization in Nigeria. Addresses ₦500B annual revenue loss and unverified records through a Revenue Collection & Service Delivery Modernization platform — streamlining public services and enhancing transparency. Built as Frontend Engineer in a team of 2.',
+      desc: 'Open-source system tackling local government digitization in Nigeria. Addresses ₦500B annual revenue loss and unverified records through a Revenue Collection & Service Delivery Modernization platform, streamlining public services and enhancing transparency. Built as Frontend Engineer in a team of 2.',
       stack: ['React', 'Tailwind CSS', 'Spring Boot', 'Java', 'JavaScript', 'Vercel', 'Render'],
       links: [
         { label: 'GitHub →', href: 'https://github.com/mercybabayemi/NigerLocalLinks' },
         { label: 'Live →', href: 'https://niger-local-links.vercel.app/' },
       ],
-    },
-    {
-      badge: 'Data',
-      title: 'Dewey Data Pipeline',
-      desc: 'Large-scale data ingestion and processing pipeline handling 30M+ records for the Labs by Semicolon data team.',
-      stack: ['Python', '30M records', 'ETL', 'PostgreSQL'],
-      links: [],
     },
     {
       badge: 'AI Education',
@@ -116,12 +109,12 @@ export const RESEARCH = {
   title: 'African Pedagogical Evaluation Framework (AfriPed)',
   chip: '📄 Standalone Framework',
   desc: [
-    'AfriPed is a standalone NLP evaluation framework built to assess AI-generated educational content through the lens of African pedagogy. Not just an embedded EnumVerse layer — a citable, independent contribution to educational AI evaluation.',
-    "Central empirical finding: negative ROUGE-L / Bloom's Taxonomy accuracy correlation — challenging assumptions about surface-level text similarity as a proxy for educational quality.",
+    'AfriPed is a standalone NLP evaluation framework built to assess AI-generated educational content through the lens of African pedagogy. Not just an embedded EnumVerse layer; a citable, independent contribution to educational AI evaluation.',
+    "Central empirical finding: negative ROUGE-L / Bloom's Taxonomy accuracy correlation, challenging assumptions about surface-level text similarity as a proxy for educational quality.",
     'Benchmarked against G-Eval, RubricEval, ELF, and the NAACL 2025 AI tutor taxonomy. Publication targets: AIED 2026 and AfricaNLP 2026.',
   ],
   stack: ['HuggingFace', 'ROUGE-L', "Bloom's Taxonomy", 'G-Eval', 'Gradio', 'Python Package', 'AIED 2026'],
-  finding: "Negative correlation between ROUGE-L scores and Bloom's Taxonomy accuracy — high lexical overlap does not guarantee pedagogically sound AI-generated content.",
+  finding: "Negative correlation between ROUGE-L scores and Bloom's Taxonomy accuracy: high lexical overlap does not guarantee pedagogically sound AI-generated content.",
   links: [
     { label: 'Google Scholar', href: 'https://scholar.google.com', placeholder: true },
     { label: 'arXiv', href: 'https://arxiv.org', placeholder: true },
@@ -138,7 +131,7 @@ export const RESEARCH = {
 }
 
 export const TECH_WRITING = {
-  intro: 'My BA in English Language from UNILAG is not decoration — it is the engine behind every doc, tutorial, and research paper I produce. Six years writing publicly on Medium, across styles and audiences.',
+  intro: 'My BA in English Language from UNILAG is not decoration; it is the engine behind every doc, tutorial, and research paper I produce.',
   styles: [
     {
       type: 'Tutorial',
@@ -158,14 +151,14 @@ export const TECH_WRITING = {
       type: 'Beginner Guide',
       icon: '🚀',
       title: '5 AI Tools Every Nigerian Freelancer Needs Right Now',
-      desc: 'Accessible, outcome-driven writing for non-technical audiences — practical over jargon.',
+      desc: 'Accessible, outcome-driven writing for non-technical audiences, practical over jargon.',
       medium: 'https://medium.com/@mercybabayemi',
     },
     {
       type: 'Journey / Reflection',
       icon: '🗺️',
       title: 'From English Teacher to AI Engineer: What I Wish I Knew',
-      desc: 'Personal narrative mapping a career transition — story-driven with real technical anchors.',
+      desc: 'Personal narrative mapping a career transition, story-driven with real technical anchors.',
       medium: 'https://medium.com/@mercybabayemi',
     },
     {
@@ -184,7 +177,7 @@ export const TECH_WRITING = {
     },
   ],
   upcomingSuggestions: [
-    { type: 'API Reference', idea: 'REST API Docs for EnumVerse — endpoints, schemas, request/response examples' },
+    { type: 'API Reference', idea: 'REST API Docs for EnumVerse: endpoints, schemas, request/response examples' },
     { type: 'User Manual', idea: 'Non-technical user manual for a Paystack-integrated business website' },
     { type: 'Changelog', idea: 'AfriPed v0.1 → v0.2 changelog with migration notes' },
     { type: 'Case Study', idea: 'Data Pipeline Case Study: Processing 30M records on a budget' },
@@ -200,14 +193,12 @@ export const EXPERIENCE = {
       type: 'Full-time Internship',
       points: [
         'Built EnumVerse AI content & assessment generation layer (FastAPI + Pydantic v2 + Ollama)',
-        'Developed VentureMarker data pipeline — scraped and structured ~56,000 company records',
-        'Created AfriPed evaluation framework — empirical NLP research now targeting AIED 2026',
-        'Processed 30M+ records for the Dewey Data pipeline project',
-        'Documented 14 GitHub repositories with full technical documentation',
+        'Developing VentureMarker data pipeline, scraping and structuring ~56,000 company records',
+        'Building AfriPed evaluation framework for empirical NLP research',
       ],
     },
     {
-      role: 'Scholarship Fellow & Website Contributor',
+      role: 'Scholarship Fellow',
       org: 'Black Rising Community (BRC)',
       period: 'Sep 2024 – Dec 2025',
       type: 'Fellowship',
@@ -216,7 +207,16 @@ export const EXPERIENCE = {
         'Participated in monthly development sessions and peer mentorship (buddy system)',
         'Represented BRC through content creation: visuals, testimonials, media outreach',
         'Co-planned community events including the end-of-year celebration',
-        'Built BRC Auction App — real-time bidding platform for the community',
+      ],
+    },
+    {
+      role: 'Platoon Assistant',
+      org: 'Nigeria Youth Service Corps (NYSC)',
+      period: '2021 – 2022',
+      type: 'National Service',
+      points: [
+        'Served as Platoon Assistant during the NYSC service year',
+        'Supported platoon coordination, welfare, and communication between corp members and camp officials',
       ],
     },
     {
@@ -253,9 +253,9 @@ export const EXPERIENCE = {
       type: 'President',
       icon: '🏆',
       points: [
-        'Leading "Create Lasting Impact" theme — 25 projects target for the year',
-        'Porto Novo international trip — June 2026',
-        'President Elect Conference — May 2026',
+        'Leading the "Create Lasting Impact" theme',
+        'Porto Novo international trip, June 2026',
+        'President Elect Conference, May 2026',
         'Previous roles: Club Secretary, Welfare, Basic Education & Literacy Rep',
         'Documenting all initiatives on YouTube for impact evidence',
       ],
@@ -291,24 +291,22 @@ export const EXPERIENCE = {
 }
 
 export const LEADERSHIP = {
-  intro: 'Rotaract Club of Lagos Island — President 2026–2027. Every event, conference, and project will be documented and linked here.',
+  intro: 'Follow the Rotary year on YouTube with Mercy Babayemi.',
   conferences: [
     { name: 'President Elect Conference', date: 'May 2026', status: 'upcoming', youtube: null },
     { name: 'Porto Novo International Trip', date: 'June 2026', status: 'upcoming', youtube: null },
     { name: 'President Installation Ceremony', date: 'July 2026', status: 'upcoming', youtube: null },
   ],
   theme: 'Create Lasting Impact',
-  targetProjects: 25,
   exec: [
     { role: 'President', name: 'Mercy Babayemi' },
     { role: 'VP', name: 'Victoria Remilekun' },
     { role: 'IPP', name: 'Orji Michael' },
-    { role: 'Partnerships', name: 'Alfred Odunayo' },
-    { role: 'Treasurer', name: 'Jeremiah' },
+    { role: 'Treasurer & PR Chair', name: 'Alfred Odunayo' },
     { role: 'Secretary', name: 'Hubaidat' },
     { role: 'Welfare', name: 'Khalidat' },
-    { role: 'Tech', name: 'Dolapo Abdullahi' },
-    { role: 'Social Media', name: 'Ogbebor Oluwadoyisola' },
+    { role: 'Tech Lead', name: 'Dolapo Abdullahi' },
+    { role: 'Content Lead', name: 'Doyinsola' },
   ],
 }
 
@@ -316,7 +314,7 @@ export const SERVICES = [
   {
     icon: '🌐',
     title: 'Website Development',
-    desc: 'Industry-specific websites for Nigerian businesses — from features and functionality to full documentation, wireframes, Mermaid diagrams, class diagrams, use case diagrams, and deployment. Paystack integration, Tally forms, n8n/Make automation included.',
+    desc: 'Industry-specific websites for Nigerian businesses: from features and functionality to full documentation, wireframes, Mermaid diagrams, class diagrams, use case diagrams, and deployment. Paystack integration, Tally forms, n8n/Make automation included.',
     price: 'Custom Pricing',
     cta: 'Book a Call →',
     href: '#contact',
@@ -324,7 +322,7 @@ export const SERVICES = [
   {
     icon: '📊',
     title: 'Data Analysis Template',
-    desc: 'Ready-to-use digital product for data analysis workflows. Structured templates, guided processes, and practical frameworks for Nigerian businesses and analysts.',
+    desc: 'Ready-to-use digital product for data analysis workflows. Structured templates, guided processes, and practical frameworks for Nigerian businesses.',
     price: 'Available on Selar',
     cta: 'Get Template →',
     href: 'https://selar.co',
@@ -332,7 +330,7 @@ export const SERVICES = [
   {
     icon: '📝',
     title: 'Technical Writing',
-    desc: 'API documentation, user manuals, architecture docs, system design with Mermaid/class diagrams, tutorials, and research writing. From technical jargon to plain English — I bridge both worlds.',
+    desc: 'API documentation, user manuals, architecture docs, system design with Mermaid/class diagrams, tutorials, and research writing. From technical jargon to plain English; I bridge both worlds.',
     price: 'Contact for Rates',
     cta: 'Enquire →',
     href: '#contact',
@@ -340,7 +338,7 @@ export const SERVICES = [
   {
     icon: '💻',
     title: 'Programming Tutoring',
-    desc: '1-on-1 intro to programming for absolute beginners. Python, web fundamentals, or AI basics — taught by someone who was a teacher first and an engineer second.',
+    desc: '1-on-1 intro to programming for absolute beginners. Python, web fundamentals, or AI basics, taught by someone who was a teacher first and an engineer second.',
     price: 'Contact for Rates',
     cta: 'Enquire →',
     href: '#contact',
@@ -349,7 +347,7 @@ export const SERVICES = [
     icon: '📣',
     title: 'Meta & Google Ads',
     desc: 'Paid social and search advertising for Nigerian brands. Campaign setup, audience targeting, creative strategy, and performance reporting. Results-focused, no fluff.',
-    price: 'Service Fee — Contact for Quote',
+    price: 'Service Fee. Contact for Quote.',
     cta: 'Get Quote →',
     href: '#contact',
   },
@@ -358,19 +356,19 @@ export const SERVICES = [
 export const FASHION = {
   brand: 'Aafinoge',
   tagline: 'Wearable Identity. African Luxury.',
-  desc: "Aafinoge is a fashion brand rooted in African identity and contemporary elegance. Every piece is a statement — crafted with intention, worn with confidence. Follow the journey.",
+  desc: "Aafinoge brings you elegant, ready-to-wear pieces rooted in African identity and contemporary elegance. Aafinoge Fabrics is the sister brand offering fabric wholesale and retail, delivering nationwide and worldwide. Every piece is a statement, crafted with intention, worn with confidence.",
   links: [
-    { label: 'Website', icon: '🌐', href: 'https://aafinoge.com' },          // ← replace
-    { label: 'Instagram', icon: '📸', href: 'https://instagram.com/aafinoge' }, // ← replace
-    { label: 'TikTok', icon: '🎵', href: 'https://tiktok.com/@aafinoge' },    // ← replace
-    { label: 'Twitter / X', icon: '🐦', href: 'https://x.com/aafinoge' },     // ← replace
+    { label: 'Website', icon: '🌐', href: 'https://aafinoge.com' },
+    { label: 'Aafinoge on Instagram', icon: '📸', href: 'https://www.instagram.com/aafinoge/' },
+    { label: 'Aafinoge Fabrics on Instagram', icon: '📸', href: 'https://www.instagram.com/aafinogefabrics/' },
+    { label: 'TikTok', icon: '🎵', href: 'https://www.tiktok.com/@aafinoge' },
   ],
 }
 
 export const INITIATIVE = {
   name: 'ForNaijaKid',
   tagline: 'Every naija kid deserves to understand the world they will inherit.',
-  desc: 'Bridging the digital divide in suburban communities across Nigeria — starting from Lagos. We visit communities, put computers in children\'s hands, and hand them a key to a world without borders. No child gets left behind in the digital age.',
+  desc: 'Bridging the digital divide in suburban communities across Nigeria, starting from Lagos. We visit communities, put computers in children\'s hands, and hand them a key to a world without borders. No child gets left behind in the digital age.',
   links: {
     site: 'https://fornaijakid.org',
     volunteer: 'https://fornaijakid.org/volunteer',
@@ -379,11 +377,14 @@ export const INITIATIVE = {
 }
 
 export const SOCIALS = [
+  { icon: '📧', label: 'mercy@semicolon.africa', href: 'mailto:mercy@semicolon.africa' },
+  { icon: '📧', label: 'mercybabayemi@gmail.com', href: 'mailto:mercybabayemi@gmail.com' },
+  { icon: '📧', label: 'mercyjanet013@gmail.com', href: 'mailto:mercyjanet013@gmail.com' },
   { icon: '🐙', label: 'github.com/mercybabayemi', href: 'https://github.com/mercybabayemi' },
   { icon: '✍️', label: 'medium.com/@mercybabayemi', href: 'https://medium.com/@mercybabayemi' },
   { icon: '💼', label: 'LinkedIn', href: 'https://linkedin.com/in/mercybabayemi' },
   { icon: '🎵', label: 'TikTok — @naijatechsis', href: 'https://tiktok.com/@naijatechsis' },
-  { icon: '📸', label: 'Instagram — @naijatechsis', href: 'https://instagram.com/naijatechsis' },
-  { icon: '▶️', label: 'YouTube — Naija Tech Sis', href: 'https://youtube.com/@naijatechsis' },
+  { icon: '📸', label: 'Instagram — @mercybabayemi', href: 'https://instagram.com/mercybabayemi' },
+  { icon: '▶️', label: 'YouTube — @mercybabayemi', href: 'https://youtube.com/@mercybabayemi' },
   { icon: '🌍', label: 'fornaijakid.org', href: 'https://fornaijakid.org' },
 ]

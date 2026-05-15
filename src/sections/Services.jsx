@@ -8,7 +8,7 @@ export default function Services() {
 
   return (
     <section id="services" className="section">
-      <SectionHeader chip="Services" title="Work With Me" sub="Digital products, web services, AI education, and technical writing under the Naija Tech Sis brand." />
+      <SectionHeader chip="Services" title="Work With Me" sub="Digital products, web services, AI education, and technical writing under Naija Tech Sis." />
       <div className={styles.grid} ref={gridRef}>
         {SERVICES.map(s => (
           <div key={s.title} className={`${styles.card} reveal-child`}>
