@@ -27,9 +27,7 @@ export default function Fashion() {
               </a>
             ))}
           </div>
-          <p className={styles.note}>
-            ✏️ <em>Links marked above are placeholders — update with live Aafinoge URLs in <code>src/data/portfolio.js</code></em>
-          </p>
+
         </div>
         <div className={styles.right}>
           <div className={styles.logoBox}>
