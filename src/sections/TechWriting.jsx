@@ -109,7 +109,7 @@ export default function TechWriting() {
       <SectionHeader
         chip="Writing"
         title="Words That Work"
-        sub="Writing has always been mine. BA in English Language from UNILAG. From personal stories to API docs, tutorials, architecture docs, and everything in between — every word built with intention."
+        sub="Writing has always been mine. From personal stories to API docs, tutorials, architecture docs, and everything in between, every word built with intention."
       />
 
       <div className={styles.tabs}>

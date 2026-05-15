@@ -24,7 +24,7 @@ export const ABOUT = {
     'My edge? I think across linguistics, pedagogy, and systems engineering simultaneously. My BA in English Language is not background noise; it is the reason the AI I build understands how people actually learn and communicate.',
   ],
   tags: [
-    'FastAPI', 'Python', 'NLP', 'Pydantic v2', 'Ollama',
+    'FastAPI', 'Python', 'Java', 'NLP', 'Pydantic v2', 'Ollama',
     'n8n', 'React', 'HuggingFace', 'Paystack', 'PostgreSQL',
     'Docker', 'Technical Writing', 'Mermaid', 'REST APIs',
   ],
@@ -42,7 +42,7 @@ export const SKILLS = [
   { icon: '🧠', title: 'AI, NLP & ML', tags: ['Large Language Models', 'HuggingFace', 'Transformers', 'BERT', 'NLTK', 'SpaCy', 'Feature Engineering', 'ROUGE-L', "Bloom's Taxonomy", 'Evaluation Metrics', 'PyTorch', 'TensorFlow', 'Scikit-learn', 'NumPy'] },
   { icon: '🗄️', title: 'Data Engineering', tags: ['Pandas', 'PostgreSQL', 'MongoDB', 'MySQL', '30M+ records', 'ETL', 'Data Cleaning'] },
   { icon: '⚡', title: 'Automation', tags: ['n8n', 'Make', 'Tally', 'Paystack', 'Webhooks', 'WebSockets', 'Socket.IO', 'Workflow Design'] },
-  { icon: '🌐', title: 'Full-Stack Dev', tags: ['React', 'TypeScript', 'Tailwind CSS', 'Flask', 'Spring Boot', 'Node.js', 'Django', 'MongoDB', 'Socket.IO', 'Redis', 'REST APIs', 'JWT', 'HTML/CSS', 'JavaScript'] },
+  { icon: '🌐', title: 'Full-Stack Dev', tags: ['React', 'TypeScript', 'Tailwind CSS', 'Flask', 'Spring Boot', 'Java', 'Node.js', 'Django', 'MongoDB', 'Socket.IO', 'Redis', 'REST APIs', 'JWT', 'HTML/CSS', 'JavaScript'] },
   { icon: '✍️', title: 'Technical Writing', tags: ['Software Requirements Spec: Functional Requirements · Non-Functional Requirements · User Stories · Use Cases · Data Requirements · System Constraints · Assumptions & Dependencies', 'API Docs', 'User Manuals', 'Tutorials', 'Architecture Docs', 'Mermaid Diagrams', 'Changelogs'] },
   { icon: '📐', title: 'System Design', tags: ['Requirements Analysis', 'Wireframes', 'Mermaid', 'Class Diagrams', 'Use Cases', 'ER Diagrams', 'Architecture Docs'] },
   { icon: '📊', title: 'Research & Eval', tags: ['G-Eval', 'RubricEval', 'AfriPed', 'Gradio', 'HuggingFace Spaces', 'Google Colab', 'Jupyter Notebook', 'Academic Writing', 'ArXiv'] },

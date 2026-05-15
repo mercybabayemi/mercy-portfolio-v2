@@ -16,7 +16,7 @@ export default function Leadership() {
     <section id="leadership" className="section section--alt">
       <SectionHeader
         chip="Year in Service"
-        title="Rotaract Club of Lagos Island"
+        title="Serving"
         sub={`President 2026–2027 · "${LEADERSHIP.theme}"`}
       />
 

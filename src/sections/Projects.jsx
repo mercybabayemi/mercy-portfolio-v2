@@ -14,7 +14,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="section section--alt">
-      <SectionHeader chip="Projects" title="Things I've Built" sub="From AI-powered e-learning to data pipelines processing millions of records." />
+      <SectionHeader chip="Projects" title="Things I've Built" />
 
       {/* Featured */}
       <div className={styles.featured}>
