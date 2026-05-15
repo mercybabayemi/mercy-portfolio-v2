@@ -61,6 +61,9 @@ export default function Nav() {
           aria-label="Toggle theme"
         >
           {theme === 'dark' ? '☀️' : '🌙'}
+          <span className={styles.toggleLabel}>
+            {theme === 'dark' ? 'Light' : 'Dark'}
+          </span>
         </button>
         <a href="#contact" className={styles.hireCta}>Hire Me</a>
         <button

@@ -61,16 +61,29 @@
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 8px;
-  width: 36px;
   height: 32px;
+  padding: 0 0.65rem;
   font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.35rem;
   transition: border-color 0.2s;
 }
 
 .toggle:hover { border-color: var(--teal); }
+
+.toggleLabel {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+  .toggleLabel { display: none; }
+}
 
 .hireCta {
   padding: 0.48rem 1.1rem;
