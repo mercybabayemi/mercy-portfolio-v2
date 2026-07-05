@@ -33,7 +33,7 @@ export const ABOUT = {
     { icon: '🎓', title: 'University of Lagos', body: 'B.A. English Language, the linguistic foundation that powers my NLP intuition and technical writing depth.' },
     { icon: '🌱', title: 'ForNaijaKids', body: 'Founder. Bridging the digital divide in suburban Nigerian communities, putting computers in children\'s hands and teaching digital literacy so no child is left behind in the digital age.' },
     { icon: '📡', title: 'Naija Tech Sis', body: 'Founder. AI education courses, web services, and digital products for Nigerian businesses and global learners.' },
-    { icon: '🌍', title: 'Rotaract Club of Lagos Island', body: 'President 2026–2027. "Create Lasting Impact." Porto Novo June, President Elect Conference May.' },
+    { icon: '🌍', title: 'Rotaract Club of Lagos Island', body: 'President-Elect, 2026–2027. "Create Lasting Impact." Porto Novo June, Conference May.' },
   ],
 }
 
@@ -246,31 +246,26 @@ export const EXPERIENCE = {
       ],
       link: 'https://fornaijakid.org',
     },
-    {
-      role: 'President (2026–2027)',
+    fornaijakid.org',
+    },    {
+      role: 'President-Elect',
       org: 'Rotaract Club of Lagos Island',
-      period: 'Jul 2026 – Jun 2027',
-      type: 'President',
+      period: 'Apr 2022 – Present',
+      type: 'Volunteering',
       icon: '🏆',
       points: [
-        'Leading the "Create Lasting Impact" theme',
-        'Porto Novo international trip, June 2026',
-        'President Elect Conference, May 2026',
-        'Previous roles: Club Secretary, Welfare, Basic Education & Literacy Rep',
-        'Documenting all initiatives on YouTube for impact evidence',
+        'Community volunteering in education, welfare, and humanitarian outreach.',
       ],
       link: null,
     },
-    {
-      role: 'Volunteer',
-      org: 'Rotary Club of Lagos Island',
+     {
+      role: 'President-Elect',
+      org: 'Rotaract Club of Lagos Island',
       period: 'Apr 2022 – Present',
-      type: 'Volunteer',
-      icon: '⚙️',
+      type: 'Volunteering',
+      icon: '🏆',
       points: [
-        'Community service: leadership development, education, humanitarian outreach',
-        'Roles held: Club Secretary, Welfare Personnel, Basic Education & Literacy Rep',
-        'Fundraising, advocacy programs, and local project coordination',
+        'Community volunteering in education, welfare, and humanitarian outreach.',
       ],
       link: null,
     },
@@ -377,9 +372,9 @@ export const INITIATIVE = {
 }
 
 export const SOCIALS = [
+  { icon: '📧', label: 'hello@mercybabayemi.com', href: 'mailto:hello@mercybabayemi.com' },
   { icon: '📧', label: 'mercy@semicolon.africa', href: 'mailto:mercy@semicolon.africa' },
   { icon: '📧', label: 'mercybabayemi@gmail.com', href: 'mailto:mercybabayemi@gmail.com' },
-  { icon: '📧', label: 'mercyjanet013@gmail.com', href: 'mailto:mercyjanet013@gmail.com' },
   { icon: '🐙', label: 'github.com/mercybabayemi', href: 'https://github.com/mercybabayemi' },
   { icon: '✍️', label: 'medium.com/@mercybabayemi', href: 'https://medium.com/@mercybabayemi' },
   { icon: '💼', label: 'LinkedIn', href: 'https://linkedin.com/in/mercybabayemi' },
