@@ -9,7 +9,6 @@ const LINKS = [
   { label: 'Research',   href: '#research' },
   { label: 'Writing',    href: '#writing' },
   { label: 'Experience', href: '#experience' },
-  { label: 'Leadership', href: '#leadership' },
   { label: 'Services',   href: '#services' },
   { label: 'Contact',    href: '#contact' },
 ]
