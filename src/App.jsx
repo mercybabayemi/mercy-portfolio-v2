@@ -8,7 +8,6 @@ import Projects from './sections/Projects'
 import Research from './sections/Research'
 import TechWriting from './sections/TechWriting'
 import Experience from './sections/Experience'
-import Leadership from './sections/Leadership'
 import Services from './sections/Services'
 import Initiative from './sections/Initiative'
 import Fashion from './sections/Fashion'
@@ -39,7 +38,6 @@ export default function App() {
           <Research />
           <TechWriting />
           <Experience />
-          <Leadership />
           <Services />
           <Initiative />
           <Fashion />
